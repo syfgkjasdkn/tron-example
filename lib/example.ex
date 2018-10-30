@@ -12,6 +12,6 @@ defmodule Example do
   end
 
   def account(channel \\ channel(), <<address::21-bytes>> \\ address()) do
-    Tron.Client.get_account(channel, Procotol.Account.new(address: address))
+    Tron.Client.get_account(channel, Tron.Account.new(address: address))
   end
 end
